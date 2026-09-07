@@ -34,21 +34,39 @@ h2{margin:0 0 14px}
 <main class="page">
 <img class="poster" src="Hero.png" alt="Массаж в Варне — Вячеслав">
 <div class="buttons">
-<a class="telegram" href="https://t.me/vycheslavBG">ЗАПИСАТЬСЯ В TELEGRAM</a>
-<a class="call" href="tel:+359888815220">Позвонить</a>
-  <button class="share".share {
+.buttons {
+  display: grid;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.buttons a,
+.buttons button {
   display: block;
   width: 100%;
-  margin-top: 12px;
+  min-height: 56px;
+  box-sizing: border-box;
   padding: 16px;
   border: 0;
   border-radius: 12px;
-  background: #1683ea;
-  color: #fff;
+  text-align: center;
+  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
+  font-family: inherit;
   cursor: pointer;
-<a onclick="shareCard()">ПОДЕЛИТЬСЯ ВИЗИТКОЙ</a>
+}
+
+.telegram,
+.share {
+  background: #1683ea;
+  color: #fff;
+}
+
+.call {
+  background: #fff;
+  color: #111;
+}
 <script>
 function shareCard() {
   if (navigator.share) {
