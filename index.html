@@ -26,12 +26,28 @@ h2{margin:0 0 14px}
 <div class="buttons">
 <a class="telegram" href="https://t.me/vycheslavBG">ЗАПИСАТЬСЯ В TELEGRAM</a>
 <a class="call" href="tel:+359888815220">Позвонить</a>
+<script>
+function shareCard() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'Вячеслав — массаж в Варне',
+      text: 'Массаж в Варне · 24 года опыта · медицинское образование',
+      url: window.location.href
+    });
+  } else {
+    navigator.clipboard.writeText(window.location.href);
+    alert('Ссылка на визитку скопирована');
+  }
+}
+  </script>
 </div>
 <section class="info">
 <h2>Услуги</h2>
 <div class="price"><span>Массаж спины · 40 минут</span><b>30 €</b></div>
 <div class="price"><span>Общий массаж · 60 минут</span><b>40 €</b></div>
 <div class="price"><span>Общий массаж · 80 минут</span><b>50 €</b></div>
+<meta property="og:title" content="Вячеслав — массаж в Варне">
+...
 </section>
 <section class="info">
 <h2>ПОЧЕМУ КО МНЕ НА МАССАЖ</h2>
@@ -42,7 +58,7 @@ h2{margin:0 0 14px}
 <div class="advantage">Работаю лично, без потока клиентов</div>
 <div class="advantage">Спокойная и комфортная атмосфера</div>
 <div class="advantage">Подбираю технику массажа под ваши ощущения и запрос</div>
-
+<button class="share" onclick="shareCard()">ПОДЕЛИТЬСЯ ВИЗИТКОЙ</button>
 </section>
 </main>
 </body>
