@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>Вячеслав | Массаж в Варне</title>
+<style>
+:root{
+  --bg:#101010;--panel:#181818;--line:#292929;--text:#f5f3ee;
+  --muted:#a8a59f;--accent:#d1aa69;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.page{max-width:620px;margin:auto;padding:0 16px 30px}
+.hero{position:relative;margin:0 -16px;min-height:690px;overflow:hidden}
+.hero img{width:100%;height:690px;object-fit:cover;object-position:center top;display:block}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(16,16,16,.15) 48%,#101010 94%)}
+.hero-content{position:absolute;z-index:2;left:24px;right:24px;bottom:34px}
+.kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:9px}
+h1{font-size:43px;line-height:.98;margin:0 0 10px;letter-spacing:-1.5px}
+.lead{font-size:17px;color:#ddd;margin:0 0 20px}
+.btn{display:block;text-decoration:none;text-align:center;border-radius:12px;padding:16px;font-weight:800;font-size:16px}
+.telegram{background:#229ed9;color:white}
+.section{padding:30px 0 0}
+.section-title{font-size:26px;margin:0 0 17px;letter-spacing:-.5px}
+.services{display:grid;gap:10px}
+.service{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px 17px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.service-name{font-size:16px;font-weight:650;line-height:1.25}
+.service-time{font-size:13px;color:var(--muted);margin-top:5px}
+.price{font-size:22px;font-weight:800;color:var(--accent);white-space:nowrap}
+.about{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:20px}
+.about p{margin:0;color:#c5c2bb;line-height:1.55}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.point{border:1px solid var(--line);border-radius:14px;padding:16px;color:#d8d5ce;font-size:14px;line-height:1.35}
+.point b{display:block;color:#fff;font-size:15px;margin-bottom:5px}
+.cta{margin-top:30px;background:#e8dfcf;color:#111;border-radius:18px;padding:23px}
+.cta h2{margin:0 0 7px;font-size:24px}
+.cta p{margin:0 0 17px;color:#4e4b45;font-size:14px}
+.cta .telegram{background:#111}
+.footer{text-align:center;color:#666;font-size:12px;padding:25px 0 0}
+@media(max-width:430px){
+ h1{font-size:38px}.hero,.hero img{min-height:610px;height:610px}.points{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<section class="hero">
+<img src="vycheslav.jpg" alt="Вячеслав, массажист">
+<div class="hero-content">
+<div class="kicker">Варна · индивидуальный массаж</div>
+<h1>Вячеслав<br>Массажист</h1>
+<p class="lead">Массаж для спины и всего тела</p>
+<a class="btn telegram" href="https://t.me/vycheslavBG">Записаться в Telegram</a>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Услуги</h2>
+<div class="services">
+<div class="service"><div><div class="service-name">Массаж спины</div><div class="service-time">40 минут</div></div><div class="price">30 €</div></div>
+<div class="service"><div><div class="service-name">Общий массаж</div><div class="service-time">60 минут</div></div><div class="price">40 €</div></div>
+<div class="service"><div><div class="service-name">Общий массаж</div><div class="service-time">80 минут</div></div><div class="price">50 €</div></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Обо мне</h2>
+<div class="about">
+<p>Индивидуальная работа с каждым клиентом. Предварительная запись, спокойная атмосфера и внимание к вашим ощущениям во время массажа.</p>
+</div>
+<div class="points">
+<div class="point"><b>Индивидуально</b>Без потока клиентов</div>
+<div class="point"><b>Варна</b>Удобная запись заранее</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Записаться на массаж</h2>
+<p>Напишите мне в Telegram. Обсудим услугу и удобное время.</p>
+<a class="btn telegram" href="https://t.me/vycheslavBG">Написать @vycheslavBG</a>
+</section>
+
+<div class="footer">Вячеслав · массаж в Варне</div>
+</div>
+</body>
+</html>
